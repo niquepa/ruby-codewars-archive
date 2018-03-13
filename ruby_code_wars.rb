@@ -807,7 +807,7 @@ end
 
 #75   (from CodeFights last month) Write a function that returns the century for the given year (round up if necessary).
 def centuryFromYear(year)
-    year % 10 == 0 ? year / 100 : year / 100 + 1
+    year % 100 == 0 ? year / 100 : year / 100 + 1
 end
 
 #76   (from CodeFights last month) Write a function that checks whether input is a palindrome.
