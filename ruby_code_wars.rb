@@ -937,3 +937,9 @@ end
 def addFive(num)
   num += 5
 end
+
+# 92 "Adjacent Elements Product" - Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
+
+def adjacentElementsProduct(inputArray)
+  inputArray.each_cons(2).map { |x, y| x*y }.max
+end
